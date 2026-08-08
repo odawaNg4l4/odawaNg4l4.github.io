@@ -7,7 +7,7 @@ export function About() {
   return (
     <section id="about" className="border-b border-ink-500 py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <SectionHeading index="01" title="About" />
+        <SectionHeading title="About" />
 
         <div className="grid gap-12 lg:grid-cols-[1.6fr_1fr]">
           <div className="space-y-5">
@@ -19,7 +19,7 @@ export function About() {
           </div>
 
           <aside className="rounded-lg border border-ink-500 bg-ink-700 p-6">
-            <h3 className="font-mono text-[11px] uppercase tracking-widest text-mint-400">
+            <h3 className="font-mono text-[11px] uppercase tracking-widest text-accent-400">
               Core toolkit
             </h3>
             <ul className="mt-5 flex flex-wrap gap-2">

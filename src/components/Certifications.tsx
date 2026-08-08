@@ -8,7 +8,7 @@ export function Certifications() {
   return (
     <section id="certifications" className="border-b border-ink-500 py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <SectionHeading index="05" title="Certifications & Education" />
+        <SectionHeading title="Certifications & Education" />
 
         <ul className="grid gap-px overflow-hidden rounded-lg border border-ink-500 bg-ink-500 sm:grid-cols-2">
           {credentials.map((credential, i) =>
@@ -32,7 +32,7 @@ export function Certifications() {
               <span
               className={`shrink-0 rounded-full border px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest ${
               credential.status === 'In Progress' ?
-              'border-mint-400/40 bg-mint-400/10 text-mint-400' :
+              'border-accent-400 bg-accent-400 text-ink-900' :
               'border-ink-500 bg-ink-600 text-slateish-400'}`
               }>
               

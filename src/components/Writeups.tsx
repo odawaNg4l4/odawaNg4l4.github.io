@@ -11,7 +11,6 @@ export function Writeups() {
     <section id="writeups" className="border-b border-ink-500 py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
-          index="04"
           title="Writeups"
           description="Technical walkthroughs of lab work — the reasoning, not just the commands." />
         
@@ -29,7 +28,7 @@ export function Writeups() {
                     aria-controls={`writeup-${writeup.id}`}
                     className="flex w-full items-start gap-4 p-6 text-left transition-colors hover:bg-ink-600 sm:p-8">
                     
-                    <FileTextIcon className="mt-1 h-5 w-5 shrink-0 text-mint-400" aria-hidden="true" />
+                    <FileTextIcon className="mt-1 h-5 w-5 shrink-0 text-accent-400" aria-hidden="true" />
                     <span className="flex-1">
                       <span className="block text-lg font-semibold text-slateish-100">
                         {writeup.title}
@@ -73,7 +72,7 @@ export function Writeups() {
                         <div className="space-y-6">
                           {writeup.sections.map((section) =>
                         <div key={section.heading}>
-                              <h4 className="font-mono text-sm font-medium text-mint-400">
+                              <h4 className="font-mono text-sm font-medium text-accent-400">
                                 {section.heading}
                               </h4>
                               <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slateish-200">

@@ -39,7 +39,6 @@ export function Contact() {
     <section id="contact" className="py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
-          index="06"
           title="Contact"
           description="Open to SOC analyst, security operations, and IT infrastructure roles. The fastest way to reach me is email." />
         
@@ -52,7 +51,7 @@ export function Contact() {
               {...external ? { target: '_blank', rel: 'noreferrer' } : {}}
               className="flex items-center gap-4 p-6 transition-colors hover:bg-ink-600">
               
-                <Icon className="h-5 w-5 shrink-0 text-mint-400" aria-hidden="true" />
+                <Icon className="h-5 w-5 shrink-0 text-accent-400" aria-hidden="true" />
                 <span>
                   <span className="block font-mono text-[10px] uppercase tracking-widest text-slateish-500">
                     {label}
@@ -68,7 +67,7 @@ export function Contact() {
           <a
             href={profile.cvUrl}
             download
-            className="inline-flex items-center gap-2 rounded bg-mint-400 px-5 py-3 text-sm font-semibold text-ink-900 transition-colors hover:bg-mint-500">
+            className="inline-flex items-center gap-2 rounded bg-accent-400 px-5 py-3 text-sm font-semibold text-ink-900 transition-colors hover:bg-accent-500">
             
             <DownloadIcon className="h-4 w-4" aria-hidden="true" />
             Download CV (PDF)

@@ -10,7 +10,7 @@ export function Footer() {
           href={profile.github}
           target="_blank"
           rel="noreferrer"
-          className="transition-colors hover:text-mint-400">
+          className="transition-colors hover:text-accent-400">
           
           Source on GitHub
         </a>

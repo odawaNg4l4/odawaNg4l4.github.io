@@ -19,28 +19,11 @@ export const projects: Project[] = [
   'I can now explain and demonstrate the full path from endpoint log to correlated alert to triage decision, and compare open-source vs enterprise SIEM workflows.'
 },
 {
-  id: 'bootcamp',
-  title: 'Cybersecurity Boot Camp — WomenTechstars Fellowship',
-  context: 'Fellowship programme · Hands-on labs',
-  problem:
-  'I needed end-to-end infrastructure and defence experience, not just isolated tool knowledge.',
-  actions: [
-  'Intensive hands-on training in Linux systems administration, networking, and security monitoring.',
-  'Practical labs in vulnerability scanning, penetration testing fundamentals, and incident response.',
-  'Log analysis and threat detection in simulated enterprise environments.',
-  'Configured firewalls and implemented IDS/IPS solutions in lab environments.',
-  'Executed server configuration and system hardening aligned with security best practices.'],
-
-  tools: ['Linux', 'Nmap', 'Burp Suite', 'Firewalls', 'IDS/IPS'],
-  outcome:
-  'Built a foundation in both proactive and reactive security practices: reduced lab-environment vulnerabilities through hardening, and improved my ability to identify and respond to simulated incidents.'
-},
-{
   id: 'lab-platforms',
-  title: 'Practical Lab Platforms',
-  context: 'TryHackMe · Hack The Box · Home lab',
+  title: 'Hands-On Security Labs',
+  context: 'TryHackMe · Hack The Box · Self-built home lab',
   problem:
-  'Reading about attacks is not the same as running them. I needed repeatable hands-on reps.',
+  'A safe environment to run attacks and defences hands-on, turning documented techniques into practical, repeatable skills.',
   actions: [
   'Completed TryHackMe learning paths covering network reconnaissance, SQL injection, Windows security, Linux systems, and SIEM fundamentals.',
   'Ran self-directed Linux administration labs in virtualised environments.',

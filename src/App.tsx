@@ -14,7 +14,7 @@ export function App() {
     <div className="w-full min-h-screen bg-ink-800 font-sans antialiased">
       <a
         href="#about"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-mint-400 focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-ink-900">
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-accent-400 focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-ink-900">
         
         Skip to content
       </a>

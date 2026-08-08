@@ -5,14 +5,8 @@ import { profile, stats } from '../data/profile';
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden border-b border-ink-500 pt-28 pb-16 sm:pt-36 sm:pb-24">
-      <div className="grid-backdrop pointer-events-none absolute inset-0 opacity-60" aria-hidden="true" />
-      <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-ink-800 to-transparent"
-        aria-hidden="true" />
-      
-
-      <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
+    <section id="top" className="border-b border-ink-500 pt-28 pb-16 sm:pt-36 sm:pb-24">
+      <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -22,7 +16,7 @@ export function Hero() {
             {profile.name}
           </h1>
 
-          <p className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 font-mono text-sm text-mint-400 sm:text-base">
+          <p className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 font-mono text-sm text-accent-400 sm:text-base">
             {profile.roles.map((role, i) =>
             <span key={role} className="flex items-center gap-3">
                 {i > 0 ? <span className="text-slateish-500" aria-hidden="true">|</span> : null}
@@ -38,7 +32,7 @@ export function Hero() {
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 rounded bg-mint-400 px-5 py-3 text-sm font-semibold text-ink-900 transition-colors hover:bg-mint-500">
+              className="inline-flex items-center gap-2 rounded bg-accent-400 px-5 py-3 text-sm font-semibold text-ink-900 transition-colors hover:bg-accent-500">
               
               View projects &amp; labs
               <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
@@ -46,7 +40,7 @@ export function Hero() {
             <a
               href={profile.cvUrl}
               download
-              className="inline-flex items-center gap-2 rounded border border-ink-500 px-5 py-3 text-sm font-semibold text-slateish-200 transition-colors hover:border-mint-400/50 hover:text-mint-400">
+              className="inline-flex items-center gap-2 rounded border border-ink-500 px-5 py-3 text-sm font-semibold text-slateish-200 transition-colors hover:border-accent-400 hover:text-accent-400">
               
               <DownloadIcon className="h-4 w-4" aria-hidden="true" />
               Download CV

@@ -9,7 +9,6 @@ export function Skills() {
     <section id="skills" className="border-b border-ink-500 py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
-          index="02"
           title="Skills"
           description="Grouped by the work they belong to — monitoring and response first, then the infrastructure and networking foundations underneath it." />
         
@@ -34,7 +33,7 @@ export function Skills() {
               
                 {group.items.map((item) =>
               <li key={item} className="flex items-start gap-2.5 text-sm text-slateish-200">
-                    <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-mint-400" aria-hidden="true" />
+                    <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-accent-400" aria-hidden="true" />
                     <span>{item}</span>
                   </li>
               )}
