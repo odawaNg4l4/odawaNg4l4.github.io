@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ChevronDownIcon, FileTextIcon } from 'lucide-react';
-import { writeups } from '../data/projects';
+import { ChevronDownIcon, ExternalLinkIcon, FileTextIcon } from 'lucide-react';
+import { featuredReport, writeups } from '../data/projects';
 import { SectionHeading } from './SectionHeading';
 
 export function Writeups() {
@@ -13,7 +13,42 @@ export function Writeups() {
         <SectionHeading
           title="Writeups"
           description="Technical walkthroughs of lab work — the reasoning, not just the commands." />
-        
+
+
+        <div className="mb-6 rounded-lg border border-accent-400/40 bg-ink-700 p-6 sm:p-8">
+          <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-widest text-accent-400">
+                Featured incident report
+              </p>
+              <h3 className="mt-2 text-lg font-semibold text-slateish-100">
+                {featuredReport.title}
+              </h3>
+              <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slateish-400">
+                {featuredReport.summary}
+              </p>
+              <ul className="mt-4 flex flex-wrap gap-2">
+                {featuredReport.tools.map((tool) =>
+                <li
+                  key={tool}
+                  className="rounded border border-ink-500 bg-ink-600 px-2 py-1 font-mono text-[11px] text-slateish-200">
+
+                    {tool}
+                  </li>
+                )}
+              </ul>
+            </div>
+            <a
+              href={featuredReport.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded border border-accent-400 px-4 py-2 text-sm font-semibold text-accent-400 transition-colors hover:bg-accent-400 hover:text-ink-900">
+
+              Read full report
+              <ExternalLinkIcon className="h-4 w-4" aria-hidden="true" />
+            </a>
+          </div>
+        </div>
 
         <div className="space-y-4">
           {writeups.map((writeup) => {

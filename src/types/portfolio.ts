@@ -22,6 +22,13 @@ export type Writeup = {
   sections: {heading: string;body: string;}[];
 };
 
+export type FeaturedReport = {
+  title: string;
+  summary: string;
+  tools: string[];
+  href: string;
+};
+
 export type Credential = {
   id: string;
   name: string;

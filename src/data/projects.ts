@@ -1,4 +1,12 @@
-import type { Credential, Project, Writeup } from '../types/portfolio';
+import type { Credential, FeaturedReport, Project, Writeup } from '../types/portfolio';
+
+export const featuredReport: FeaturedReport = {
+  title: 'Incident Response Report — Carnage PCAP Analysis',
+  summary:
+  'A full incident response report from network forensics on the TryHackMe Carnage PCAP: tracing a malicious archive download through post-infection C2 traffic, Cobalt Strike infrastructure, public-IP discovery and malspam activity — with a timeline, IOC table and containment recommendations.',
+  tools: ['Wireshark', 'VirusTotal', 'TryHackMe'],
+  href: 'https://docs.google.com/document/d/1G6YK6GjDAtOqt-p1qh3ylrHr8WPtLCsQUUuke78Xd18/edit?usp=sharing'
+};
 
 export const projects: Project[] = [
 {
