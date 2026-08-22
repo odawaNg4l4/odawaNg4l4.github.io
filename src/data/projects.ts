@@ -1,12 +1,22 @@
 import type { Credential, FeaturedReport, Project, Writeup } from '../types/portfolio';
 
-export const featuredReport: FeaturedReport = {
+export const featuredReports: FeaturedReport[] = [
+{
+  label: 'Featured incident report',
   title: 'Incident Response Report — Carnage PCAP Analysis',
   summary:
   'A full incident response report from network forensics on the TryHackMe Carnage PCAP: tracing a malicious archive download through post-infection C2 traffic, Cobalt Strike infrastructure, public-IP discovery and malspam activity — with a timeline, IOC table and containment recommendations.',
   tools: ['Wireshark', 'VirusTotal', 'TryHackMe'],
   href: 'https://docs.google.com/document/d/1G6YK6GjDAtOqt-p1qh3ylrHr8WPtLCsQUUuke78Xd18/edit?usp=sharing'
-};
+},
+{
+  label: 'Incident investigation report',
+  title: 'Windows Host Investigation — Post-Compromise Triage',
+  summary:
+  'A post-compromise investigation of a Windows Server 2016 host on TryHackMe: enumerating local accounts and privilege, reviewing logon evidence in the Security log, and tracing an out-of-place C:\\TMP directory to a staged credential-dumping tool — with a timeline, IOC table, persistence review and containment recommendations.',
+  tools: ['Windows Server 2016', 'PowerShell', 'wevtutil', 'TryHackMe'],
+  href: '/Investigating-Windows-Report.pdf'
+}];
 
 export const projects: Project[] = [
 {

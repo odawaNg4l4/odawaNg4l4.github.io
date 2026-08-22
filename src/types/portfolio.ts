@@ -23,6 +23,7 @@ export type Writeup = {
 };
 
 export type FeaturedReport = {
+  label: string;
   title: string;
   summary: string;
   tools: string[];
